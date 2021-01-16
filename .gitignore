@@ -24,5 +24,10 @@ hs_err_pid*
 .gradle/
 build/
 .idea/
+.vscode/
+bin/*
+.classpath
+.project
+.settings
 *.iml
 out/

@@ -31,7 +31,7 @@ object FieldChart : LineChart<Number, Number>(
             backgroundColor = multi(Color.LIGHTGRAY)
         }
         lookup(".chart-plot-background").style +=
-            "-fx-background-image: url(\"chart-background.png\");" +
+            "-fx-background-image: url(\"chart-background.jpg\");" +
                 "-fx-background-size: stretch;" +
                 "-fx-background-position: top right;" +
                 "-fx-background-repeat: no-repeat;"

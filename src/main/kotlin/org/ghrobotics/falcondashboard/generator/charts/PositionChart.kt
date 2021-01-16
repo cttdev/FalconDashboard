@@ -10,6 +10,7 @@ import javafx.scene.paint.Color
 import javafx.scene.paint.Paint
 import org.ghrobotics.falcondashboard.generator.GeneratorView
 import org.ghrobotics.falcondashboard.generator.charts.PositionChart.setOnMouseClicked
+import org.ghrobotics.falcondashboard.livevisualizer.charts.FieldChart
 import org.ghrobotics.lib.mathematics.twodim.geometry.Pose2d
 import org.ghrobotics.lib.mathematics.twodim.geometry.x_u
 import org.ghrobotics.lib.mathematics.twodim.geometry.y_u
@@ -25,8 +26,8 @@ import tornadofx.style
  * generator.
  */
 object PositionChart : LineChart<Number, Number>(
-    NumberAxis(0.0, 54.0, 1.0),
-    NumberAxis(0.0, 27.0, 1.0)
+    NumberAxis(0.0, 30.0, 1.0),
+    NumberAxis(0.0, 15.0, 1.0)
 ) {
     // Series
     private val seriesXY = Series<Number, Number>()
@@ -38,7 +39,7 @@ object PositionChart : LineChart<Number, Number>(
             backgroundColor = MultiValue(arrayOf<Paint>(Color.LIGHTGRAY))
         }
         lookup(".chart-plot-background").style +=
-            "-fx-background-image: url(\"chart-background.png\");" +
+            "-fx-background-image: url(\"chart-background.jpg\");" +
                 "-fx-background-size: stretch;" +
                 "-fx-background-position: top right;" +
                 "-fx-background-repeat: no-repeat;"
